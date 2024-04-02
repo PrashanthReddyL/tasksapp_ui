@@ -1,4 +1,4 @@
-// FilterBar.js
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { TextField, IconButton, Paper, Menu, MenuItem } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
