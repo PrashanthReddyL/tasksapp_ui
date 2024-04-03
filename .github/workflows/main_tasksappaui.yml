@@ -62,6 +62,9 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F48F3EA622144A698B35AABAEAFB98EF }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_04263EDB68504A9181F6A6EF094F96AD }}
 
+      - name: List contents of directory
+        run: ls -l C:\local\Temp\zipdeploy\extracted
+        
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
